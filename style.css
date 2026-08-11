@@ -1,0 +1,77 @@
+/* Configuração Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header / Cabeçalho */
+header {
+    background: linear-gradient(135deg, #008080, #20b2aa); /* Gradiente elegante */
+    color: #ffffff;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    padding: 40px 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Área Principal / Conteúdo */
+main {
+    background-color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Cartão do Artigo */
+article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+.artigo-autor {
+    font-weight: 600;
+    color: #008080;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Imagens Responsivas e Bonitas */
+img {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover; /* Não distorce a imagem */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02); /* Efeito suave ao passar o mouse */
+}
